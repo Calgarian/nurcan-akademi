@@ -1,0 +1,247 @@
+/* SIFIRLAMA VE LOGO YAZI TİPLERİ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #050c14;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* BAŞLIKLAR VE ALTIN TEZYİNAT */
+.section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #c5a059;
+    letter-spacing: 2px;
+}
+
+.gold-divider {
+    width: 60px;
+    height: 2px;
+    background-color: #c5a059;
+    margin: 15px auto 40px auto;
+}
+
+/* ÜST MENÜ (NAVBAR) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgba(5, 12, 20, 0.95);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.navbar .logo span {
+    color: #c5a059;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #c5a059;
+}
+
+/* GİRİŞ ALANI (HERO) */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: radial-gradient(circle at center, #0d1b2a 0%, #050c14 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-sub {
+    font-size: 1rem;
+    color: #c5a059;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.hero-title {
+    font-family: 'Cinzel', serif;
+    font-size: 3.8rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+    line-height: 1.1;
+}
+
+.hero-academy {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #c5a059;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #a4b0be;
+    max-width: 600px;
+    margin: 0 auto 35px auto;
+}
+
+.btn-gold {
+    display: inline-block;
+    padding: 14px 35px;
+    border: 1px solid #c5a059;
+    color: #c5a059;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    border-radius: 0px;
+    transition: all 0.4s ease;
+}
+
+.btn-gold:hover {
+    background-color: #c5a059;
+    color: #050c14;
+    transform: translateY(-2px);
+}
+
+/* BİZ KİMİZ SECTION */
+.about-section {
+    background-color: #0d1b2a;
+    text-align: center;
+}
+
+.about-p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    color: #f4f1de;
+    line-height: 1.8;
+}
+
+/* PROGRAMLAR BÖLÜMÜ */
+.grid-programs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #0d1b2a;
+    padding: 40px 30px;
+    border: 1px solid rgba(197, 160, 89, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    border-color: #c5a059;
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-family: 'Cinzel', serif;
+    color: #c5a059;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #a4b0be;
+    font-size: 0.95rem;
+}
+
+/* İLETİŞİM VE SOSYAL MEDYA */
+.contact-section {
+    background-color: #050c14;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #f4f1de;
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.social-btn.instagram {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.social-btn.instagram:hover {
+    background-color: #ffffff;
+    color: #050c14;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #050c14;
+    color: #57606f;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(197, 160, 89, 0.1);
+}
