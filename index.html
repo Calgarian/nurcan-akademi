@@ -11,6 +11,11 @@
 </head>
 <body>
 
+    <!-- SİTEMİZ YAPIM AŞAMASINDADIR YAZISI -->
+    <div class="announcement-bar">
+        Sitemiz yapım aşamasındadır.
+    </div>
+
     <!-- ÜST MENÜ -->
     <header class="navbar">
         <a href="#hero" class="nav-brand">NK AKADEMİ</a>
@@ -24,25 +29,19 @@
         </nav>
     </header>
 
-    <!-- KARŞILAMA ALANI (HERO) - SİNEMATİK VE DOLU TASARIM -->
+    <!-- KARŞILAMA ALANI (HERO) -->
     <section id="hero" class="hero-section">
         <div class="hero-container">
-            
             <div class="hero-frame">
                 <span class="frame-tag">EĞİTİMDE BİLİM, SANATTA GELECEK</span>
-                
-                <!-- Logo Kutusu -->
                 <div class="hero-logo-box">
                     <img src="logo.png" alt="Özel Nurcan Kurt Bilim ve Sanat Akademisi" class="hero-main-logo">
                 </div>
-                
                 <p class="hero-text">"Bilimle Düşünen, Sanatla Üreten, Geleceği Şekillendiren Nesiller İçin..."</p>
-                
                 <div class="hero-action">
                     <a href="#contact" class="btn-gold">Bize Ulaşın</a>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -52,36 +51,46 @@
             <h2 class="section-title">Biz Kimiz?</h2>
             <div class="gold-divider"></div>
             <p class="about-p">
-                Bilimi rehber edinen, sanatı ilham kaynağı gören, teknolojiyi yakından takip eden ve değerlerine sahip çıkan bireyler yetiştirmek için yola çıkıyoruz. Geleceğin bilim insanları, mühendisleri, sanatçıları ve liderleri burada yetişiyor. Birlikte öğreniyor, birlikte büyüyoruz.
+                Türkiye'deki ilk bilim ve sanat akademisi.
             </p>
         </div>
     </section>
 
-    <!-- PROGRAMLARIMIZ -->
+    <!-- PROGRAMLARIMIZ (Tıklanabilir Kartlar) -->
     <section id="programs" class="programs-section">
         <div class="container">
             <h2 class="section-title">Eğitim Programlarımız</h2>
             <div class="gold-divider"></div>
             <div class="grid-programs">
-                <div class="card">
+                <div class="card" data-program="robotik">
                     <h3>Robotik Kodlama</h3>
-                    <p>Geleceğin algoritma mimarları için mekanik tasarım ve programlama altyapısı.</p>
+                    <p>Detayları görmek için tıklayın...</p>
                 </div>
-                <div class="card">
+                <div class="card" data-program="yapay-zeka">
                     <h3>Yapay Zekâ</h3>
-                    <p>Yeni nesil teknoloji trendleri, veri analitiği ve yapay zeka araçlarının etkin kullanımı.</p>
+                    <p>Detayları görmek için tıklayın...</p>
                 </div>
-                <div class="card">
+                <div class="card" data-program="stem">
                     <h3>STEM</h3>
-                    <p>Bilim, teknoloji, mühendislik ve matematiğin pratik projelerle disiplinler arası harmanlanması.</p>
+                    <p>Detayları görmek için tıklayın...</p>
                 </div>
-                <div class="card">
+                <div class="card" data-program="sanat">
                     <h3>Sanat ve Yaratıcılık</h3>
-                    <p>Çocukların estetik algısını geliştiren, inovasyonu sanatla buluşturan yaratıcı atölyeler.</p>
+                    <p>Detayları görmek için tıklayın...</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- MODERN AÇILIR PENCERE (MODAL) -->
+    <div id="programModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalTitle">Program Başlığı</h2>
+            <div class="modal-divider"></div>
+            <p id="modalDescription">Buraya açıklamalar girilecek</p>
+        </div>
+    </div>
 
     <!-- İLETİŞİM VE SOSYAL MEDYA -->
     <section id="contact" class="contact-section">
@@ -90,6 +99,7 @@
             <div class="gold-divider"></div>
             <div class="contact-info">
                 <p><strong>Adres:</strong> Beylikdüzü, İstanbul</p>
+                <p><strong>Telefon:</strong> <a href="tel:05300000000" class="phone-link">0530 000 00 00</a></p>
                 <p><strong>Web:</strong> www.nkakademi.com</p>
             </div>
             <div class="social-links">
@@ -103,5 +113,6 @@
         <p>&copy; 2026 Özel Nurcan Kurt Bilim ve Sanat Akademisi. Tüm Hakları Saklıdır.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
